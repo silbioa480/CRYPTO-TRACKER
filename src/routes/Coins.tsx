@@ -22,15 +22,17 @@ const CoinsList = styled.ul``;
 
 const Coin = styled.li`
   background-color: white;
-  color: ${({ theme }) => theme.bgColor};
+  color: ${({ theme }) => theme.textColor};
   margin-bottom: 10px;
   border-radius: 15px;
+
   a {
     display: flex;
     align-items: center;
     padding: 20px;
     transition: color 0.3s ease-in;
   }
+
   &:hover {
     a {
       color: ${({ theme }) => theme.accentColor};
